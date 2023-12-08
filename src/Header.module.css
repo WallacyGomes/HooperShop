@@ -1,0 +1,133 @@
+header {
+  background-color: #111111;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-family: "Viga", sans-serif;
+  font-weight: bold;
+}
+
+.content h1 > span {
+  color: #6344bd;
+}
+
+.nav,
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav {
+  font-family: var(--principal);
+}
+
+li,
+a {
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+}
+
+.search input,
+button {
+  border: none;
+  height: 2.2rem;
+}
+
+.search button {
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+  background-color: #6344bd;
+  width: 2.75rem;
+}
+
+.search input {
+  width: 14rem;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+}
+
+.search button:focus,
+.search input:focus,
+.search button:active,
+.search input:active {
+  outline: 1px solid #865dff;
+}
+
+.search button:hover {
+  background-color: #865dff;
+}
+
+.comprar {
+  position: relative;
+  cursor: pointer;
+}
+
+.comprar::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(./assets/svg/expandir.svg) center center;
+  position: absolute;
+  top: 2px;
+  right: -17px;
+}
+
+.comprar .dropdownMenu {
+  display: none;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #1b1b1b;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 6px;
+}
+
+.dropdownMenu li a:hover, .dropdownMenu li a:active {
+  color: #865dff;
+  font-weight: bold;
+}
+
+.comprar:hover .dropdownMenu,
+.comprar.ativo .dropdownMenu  {
+  display: flex;
+}
+
+.dropdownMenu::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #1b1b1b;
+  position: absolute;
+  top: -8px;
+  left: 60px;
+}

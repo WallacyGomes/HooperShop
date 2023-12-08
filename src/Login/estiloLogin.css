@@ -1,0 +1,42 @@
+.conteudoLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+
+.conteudoLogin h1 {
+  font-size: 3rem;
+  padding-bottom: 40px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Loginbtn {
+  align-self: flex-end !important;
+  text-align: center !important;
+  background-color: #6344BD !important;
+  width: 140px;
+  height: 40px;
+}
+
+.recuperarSenha, .recuperarSenha button {
+  align-self: center;
+  font-family: var(--principal);
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.recuperarSenha {
+  color: #373737;
+}
+
+.recuperarSenha Button {
+  color: #1A1A1A;
+}

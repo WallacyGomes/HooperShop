@@ -1,0 +1,10 @@
+.containerBanner {
+  padding: 0px 10px;
+}
+
+.fundoImg {
+  height: 100%;
+  border-radius: 6px;
+  margin-top: 1.25rem;
+  box-shadow: 0 0 2px #1313137a;
+}

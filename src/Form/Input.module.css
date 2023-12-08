@@ -1,0 +1,21 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerForm label {
+  font-family: var(--principal);
+  font-size: 1rem;
+}
+
+.containerForm input {
+  width: 300px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 0px 10px;
+  height: 40px;
+  font-family: var(--principal);
+  font-size: 1rem;
+  background-color: transparent;
+}
