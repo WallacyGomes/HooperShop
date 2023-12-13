@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Login.module.css";
+import "./estiloLogin.css";
 import Cadastrar from "./Cadastrar";
 import Entrar from "./Entrar";
 import { useLocation } from "react-router-dom";
@@ -20,7 +20,7 @@ const Login = () => {
   }, [location]);
 
   return (
-    <section className={`${styles.containerLogin} container`}>
+    <section className='containerLogin container'>
       {cadastrar ? (
         <Cadastrar setCadastrar={setCadastrar} />
       ) : (

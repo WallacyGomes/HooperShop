@@ -8,6 +8,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .content h1 {
@@ -29,6 +31,7 @@ ul {
 
 .nav {
   font-family: var(--principal);
+  flex-wrap: wrap;
 }
 
 li,
@@ -109,18 +112,19 @@ button {
   border-radius: 6px;
 }
 
-.dropdownMenu li a:hover, .dropdownMenu li a:active {
+.dropdownMenu li a:hover,
+.dropdownMenu li a:active {
   color: #865dff;
   font-weight: bold;
 }
 
 .comprar:hover .dropdownMenu,
-.comprar.ativo .dropdownMenu  {
+.comprar.ativo .dropdownMenu {
   display: flex;
 }
 
 .dropdownMenu::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -130,4 +134,93 @@ button {
   position: absolute;
   top: -8px;
   left: 60px;
+}
+
+.menuNav {
+  display: flex;
+  gap: 20px;
+}
+
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .menuMobileContainer {
+    display: flex;
+    cursor: pointer;
+  }
+  .menuMobile {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    align-self: center;
+    box-shadow: 0px -8px 0px 0px white, 0px 8px 0px 0px white;
+    cursor: pointer;
+  }
+  .menuNav {
+    display: none;
+  }
+  .menuNav.ativo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: #111111;
+    height: 100vh;
+    padding: 60px 20px;
+    z-index: 1000;
+    gap: 40px;
+  }
+  .menuNav ul {
+    flex-direction: column;
+    font-size: 1.3rem;
+    align-items: start;
+  }
+  .search input {
+    width: 11rem;
+    font-size: 1rem;
+  }
+  .comprar::before {
+    top: 6px;
+    right: -20px;
+  }
+  .comprar.ativo::before {
+    top: 6px !important;
+    right: 30px !important;
+  }
+  .comprar:hover .dropdownMenu {
+    display: none;
+  }
+  .comprar.ativo:hover .dropdownMenu {
+    display: flex;
+  }
+  .dropdownMenu {
+    position: unset;
+    top: 40px;
+    left: 0;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 1.2rem !important;
+  }
+  .dropdownMenu::after {
+    display: none;
+  }
+  .menuBtn {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    align-self: flex-end !important;
+    
+  }
+}
+
+@media (max-width: 360px) {
+  .content h1 {
+    font-size: 1.2rem;
+  }
 }
