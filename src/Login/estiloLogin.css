@@ -1,3 +1,10 @@
+.containerLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .conteudoLogin {
   display: flex;
   flex-direction: column;
