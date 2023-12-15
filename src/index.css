@@ -69,3 +69,7 @@ img {
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 1rem !important;
 }
+
+.swiper-pagination-bullet {
+  background-color: #6344bd !important;
+}

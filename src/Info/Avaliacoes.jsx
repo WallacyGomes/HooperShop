@@ -4,8 +4,6 @@ import perfil1 from "../assets/img/perfil1.png";
 import perfil2 from "../assets/img/perfil2.png";
 import perfil3 from "../assets/img/perfil3.png";
 
-// add
-
 const Avaliacoes = ({styles}) => {
   return (
     <div className={styles.containerConteudo}>

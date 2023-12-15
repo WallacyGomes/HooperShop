@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import ProdutosHome from "./ProdutosHome";
 import VerTodosProdutos from "./VerTodosProdutos";
-import Info from "./Info";
+import Info from "./Info/Info";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {

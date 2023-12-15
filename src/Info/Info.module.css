@@ -45,9 +45,11 @@
 
 .conteudoVantagens {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  padding: 40px 0px;
 }
 
 .conteudoVantagens h2 {
@@ -58,6 +60,7 @@
 .conteudoVantagens p {
   grid-area: 2 / 2;
   align-self: flex-start;
+  max-width: 200px;
 }
 
 .vantagens p {

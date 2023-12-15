@@ -37,7 +37,7 @@ const ProdutosHome = () => {
       </div>
 
       <div className={styles.produtosContainer}>
-        <Swiper navigation slidesPerView={numeroDeSlide} pagination={{ clickable: true }}>
+        <Swiper navigation slidesPerView={numeroDeSlide}>
           <SwiperSlide className={styles.produtos}>
             <div className={styles.produto}>
               <img src={armsleeve} alt="Arm Sleeve com logo da Nike" />
