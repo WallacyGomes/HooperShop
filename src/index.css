@@ -73,3 +73,7 @@ img {
 .swiper-pagination-bullet {
   background-color: #6344bd !important;
 }
+
+html {
+  overflow: auto;
+}
