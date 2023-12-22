@@ -17,6 +17,10 @@ const Login = () => {
         document.querySelector(elemento).style.display = "none";
       }
     });
+    
+    document.documentElement.style.overflow = 'hidden';
+    
+
   }, [location]);
 
   return (

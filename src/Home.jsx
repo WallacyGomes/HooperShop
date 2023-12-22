@@ -16,6 +16,9 @@ const Home = () => {
         document.querySelector(elemento).style.display = "block";
       }
     });
+
+    document.documentElement.style.overflow = 'auto';
+
   }, [location]);
 
   return (

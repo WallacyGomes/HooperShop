@@ -57,7 +57,7 @@ const Header = () => {
     if(mobile) {
       document.documentElement.style.overflow = 'hidden';
     } else {
-      document.documentElement.style.overflow = 'initial';
+      document.documentElement.style.overflow = 'auto';
     }
   }, [mobile]);
 
