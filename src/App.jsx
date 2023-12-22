@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Produtos from './Produtos';
 import Login from "./Login/Login";
+import Sobre from "./Sobre/Sobre";
 
 //Organizar rotas
 
@@ -17,8 +18,9 @@ function App() {
         <main className="AppBody">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/produtos/*" element={<Produtos />} />
+            <Route path="/produtos" element={<Produtos />} />
             <Route path="/login" element={<Login />} />
+            <Route path="sobre/:id" element={<Sobre />} />
           </Routes>
         </main>
         <Footer />

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -19,10 +20,10 @@ const Footer = () => {
         </div>
         <div className={styles.conteudo}>
           <h2>INSTITUCIONAL</h2>
-          <a href="">Sobre Nós</a>
-          <a href="">Politicas de Privacidade</a>
-          <a href="">Termos de Serviço</a>
-          <a href="">Suporte e Atendimento</a>
+          <Link to='sobre/sobre-nos'>Sobre Nós</Link>
+          <Link to='sobre/politicas-de-privacidade'>Politicas de Privacidade</Link>
+          <Link to='sobre/termos-de-servico'>Termos de Serviço</Link>
+          <Link to='sobre/suporte-e-atendimento'>Suporte e Atendimento</Link>
         </div>
         <div className={styles.conteudo}>
           <h2>REDES SOCIAIS</h2>
