@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import ProdutosHome from "./ProdutosHome";
+import ProdutoDestaque from "./ProdutoDestaque";
 import VerTodosProdutos from "./VerTodosProdutos";
 import Info from "./Info/Info";
 import { useLocation } from "react-router-dom";
@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <ProdutosHome />
+      <ProdutoDestaque />
       <VerTodosProdutos />
       <Info />
     </>
